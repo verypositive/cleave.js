@@ -23,29 +23,8 @@ var CreditCardDetector = {
         // starts with 34/37; 15 digits
         amex: /^3[47]\d{0,13}/,
 
-        // starts with 6011/65/644-649; 16 digits
-        discover: /^(?:6011|65\d{0,2}|64[4-9]\d?)\d{0,12}/,
-
         // starts with 300-305/309 or 36/38/39; 14 digits
-        diners: /^3(?:0([0-5]|9)|[689]\d?)\d{0,11}/,
-
-        // starts with 51-55/22-27; 16 digits
-        mastercard: /^(5[1-5]|2[2-7])\d{0,14}/,
-
-        // starts with 5019/4175/4571; 16 digits
-        dankort: /^(5019|4175|4571)\d{0,12}/,
-
-        // starts with 637-639; 16 digits
-        instapayment: /^63[7-9]\d{0,13}/,
-
-        // starts with 2131/1800/35; 16 digits
-        jcb: /^(?:2131|1800|35\d{0,2})\d{0,12}/,
-
-        // starts with 50/56-58/6304/67; 16 digits
-        maestro: /^(?:5[0678]\d{0,2}|6304|67\d{0,2})\d{0,12}/,
-
-        // starts with 4; 16 digits
-        visa: /^4\d{0,15}/
+        diners: /^3(?:0([0-5]|9)|[689]\d?)\d{0,11}/
     },
 
     getInfo: function (value, strictMode) {
