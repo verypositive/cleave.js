@@ -52,41 +52,6 @@ var CreditCardDetector = {
                 type:   'diners',
                 blocks: blocks.diners
             };
-        } else if (re.discover.test(value)) {
-            return {
-                type:   'discover',
-                blocks: blocks.discover
-            };
-        } else if (re.mastercard.test(value)) {
-            return {
-                type:   'mastercard',
-                blocks: blocks.mastercard
-            };
-        } else if (re.dankort.test(value)) {
-            return {
-                type:   'dankort',
-                blocks: blocks.dankort
-            };
-        } else if (re.instapayment.test(value)) {
-            return {
-                type:   'instapayment',
-                blocks: blocks.instapayment
-            };
-        } else if (re.jcb.test(value)) {
-            return {
-                type:   'jcb',
-                blocks: blocks.jcb
-            };
-        } else if (re.maestro.test(value)) {
-            return {
-                type:   'maestro',
-                blocks: blocks.maestro
-            };
-        } else if (re.visa.test(value)) {
-            return {
-                type:   'visa',
-                blocks: strictMode ? blocks.generalStrict : blocks.visa
-            };
         } else {
             return {
                 type:   'unknown',
